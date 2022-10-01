@@ -1,4 +1,4 @@
-public abstract class SmartDevice {
+public class SmartDevice {
     String brand;
     String model;
     Double inch;
@@ -15,7 +15,7 @@ public abstract class SmartDevice {
     }
 }
 
-class SmartPhone extends SmartDevice{
+public static class SmartPhone extends SmartDevice{
     boolean nfc;
 
     public SmartPhone(){
@@ -29,7 +29,7 @@ class SmartPhone extends SmartDevice{
 
     @Override
     public String toString() {
-        return "Smartphone" +
+        return "El smartphone es" +
                 " Marca: " + brand +
                 ", Modelo: " + model +
                 ", Pulgadas: " + inch +
@@ -40,7 +40,7 @@ class SmartPhone extends SmartDevice{
 }
 
 
-class SmartWatch extends SmartDevice{
+public static class SmartWatch extends SmartDevice{
     boolean tactile;
 
     public SmartWatch(){
@@ -54,7 +54,7 @@ class SmartWatch extends SmartDevice{
 
     @Override
     public String toString() {
-        return "Smartwatch" +
+        return "El smartwatch es" +
                 " Marca: " + brand +
                 ", Modelo: " + model +
                 ", Pulgadas: " + inch +
